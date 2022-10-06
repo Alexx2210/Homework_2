@@ -1,0 +1,34 @@
+body {
+    background: url(../images/wallp1.jpg) no-repeat fixed;
+    background-size: cover;
+    font-size: 18px;
+    font-family: Verdana, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.barber_form {
+    background-color: rgba(132, 176, 212, 0.279);
+    width: 500px;
+    border: 2px solid rgba(255, 124, 64, 0.601);
+    margin: auto;
+    padding: 25px;
+}
+
+.caption {
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+.infofield {
+    margin-top: 15px;
+}
+
+fieldset {
+    margin-top: 15px;
+}
+
+
+
+legend {
+    text-align: center;
+}
