@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="    
+        background: url(images/wallp1.jpg) no-repeat fixed;
+        background-size: cover;
+        font-size: 18px;
+        font-family: Verdana, sans-serif;
+        color: rgb(255, 255, 255);">
+    <form method="POST" name="zayavka" action="/zayavka.php" style="
+        background-color: rgba(132, 176, 212, 0.279);
+        width: 500px;
+        border: 2px solid rgba(255, 124, 64, 0.601);
+        margin: auto;
+        padding: 25px;
+    ">
+        <p 
+        style="
+        font-size: 1.5rem;
+        text-align: center;
+        ">Записаться онлайн</p>
+
+        <div style="margin-top: 15px;">Тип стрижки:</div>
+        <select name="service_type">
+            <option>Стрижка</option>
+            <option>Стрижка бороды</option>
+            <option selected="selected">Стрижка + Борода</option>
+        </select>
+
+        <div style="margin-top: 15px;">Уровень специалиста:</div>
+        <label><input type="radio" name="master" value="1" />Стажер</label>
+        <label><input type="radio" name="master" value="2" checked="checked" />Барбер</label>
+        <label><input type="radio" name="master" value="3" />VIP Барбер</label>
+
+        <div style="margin-top: 15px;">Дополнительные услуги:</div>
+        <label><input type="checkbox" name="massage" /> Массаж головы</label>
+        <label><input type="checkbox" name="razor" /> Опасная бритва</label>
+
+        <div style="margin-top: 15px;">Дата и время записи:</div>
+        <input type="datetime-local" name="date_time" />
+
+        <fieldset style="margin-top: 15px;">
+            <legend style="text-align: center;">Контактная информация</legend>
+            <div style="margin-top: 15px;">Ваше имя:</div>
+            <input type="text" name="name" placeholder="введите ваше имя" />
+
+            <div style="margin-top: 15px;">Ваш телефон:</div>
+            <input type="tel" name="phone" placeholder="например, +7 800 123-45-67" />
+        </fieldset>
+
+        <input type="submit" name="zayavka_submit" value="Записаться" />
+    </form>
+
+</body>
+
+</html>
